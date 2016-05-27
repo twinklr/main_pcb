@@ -659,10 +659,6 @@ design rules under a new name.</description>
 <vertex x="-5" y="26"/>
 <vertex x="-5" y="2" curve="90"/>
 </polygon>
-<wire x1="26.4" y1="5.814778125" x2="52.3856125" y2="9.193953125" width="0" layer="19" extent="1-1"/>
-<wire x1="21.4" y1="5.814778125" x2="26.4" y2="5.814778125" width="0" layer="19" extent="1-1"/>
-<wire x1="3.5" y1="8.7" x2="21.4" y2="5.814778125" width="0" layer="19" extent="1-1"/>
-<wire x1="12.95391875" y1="22.24913125" x2="3.5" y2="8.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="POWER" pad="1"/>
