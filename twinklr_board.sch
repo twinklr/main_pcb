@@ -2729,7 +2729,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 </class>
 </classes>
 <parts>
-<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="IC1" library="linear" deviceset="LM386?-*" device="N" technology="1" value="LM386"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
@@ -2739,7 +2738,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="U$2" library="thonkiconn" deviceset="WQP-PJ301M-12_JACK" device=""/>
 <part name="SPEAKER" library="con-phoenix-350" deviceset="1751248" device=""/>
-<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="AUDIO" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP1" library="foxfield" deviceset="POWER_JACK_VERT" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
@@ -2773,7 +2771,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 <text x="45.72" y="22.86" size="2.54" layer="91">Power Regulation</text>
 </plain>
 <instances>
-<instance part="SUPPLY1" gate="GND" x="17.78" y="53.34"/>
 <instance part="IC1" gate="G$1" x="60.96" y="76.2"/>
 <instance part="SUPPLY2" gate="GND" x="48.26" y="71.12"/>
 <instance part="SUPPLY3" gate="GND" x="58.42" y="63.5"/>
@@ -2784,7 +2781,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="U$2" gate="G$1" x="20.32" y="93.98" rot="R90"/>
 <instance part="SPEAKER" gate="-1" x="119.38" y="76.2"/>
 <instance part="SPEAKER" gate="-2" x="119.38" y="68.58"/>
-<instance part="SUPPLY6" gate="GND" x="22.86" y="83.82"/>
 <instance part="AUDIO" gate="G$1" x="7.62" y="71.12" rot="MR0"/>
 <instance part="JP1" gate="G$1" x="25.4" y="12.7" rot="MR180"/>
 <instance part="SUPPLY9" gate="GND" x="48.26" y="2.54"/>
@@ -2889,17 +2885,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="S1" gate="G$1" pin="P"/>
 <wire x1="167.64" y1="45.72" x2="167.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="1"/>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="22.86" y1="88.9" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="AUDIO" gate="G$1" pin="2"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="10.16" y1="71.12" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="71.12" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="-"/>
@@ -3087,6 +3072,19 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="20.32" y1="81.28" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="81.28" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="AUDIOGND" class="0">
+<segment>
+<pinref part="AUDIO" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="71.12" x2="17.78" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="71.12" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+<label x="17.78" y="55.88" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="88.9" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
+<label x="22.86" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

@@ -872,8 +872,6 @@ design rules under a new name.</description>
 <contactref element="ENCODER" pad="4"/>
 <contactref element="S1" pad="P$3"/>
 <contactref element="S1" pad="P$4"/>
-<contactref element="U$2" pad="P$3"/>
-<contactref element="AUDIO" pad="2"/>
 <contactref element="SPEAKER" pad="2"/>
 <contactref element="R1" pad="P$1"/>
 <contactref element="C3" pad="2"/>
@@ -898,6 +896,20 @@ design rules under a new name.</description>
 <vertex x="76" y="32"/>
 <vertex x="-3" y="32" curve="90"/>
 </polygon>
+<wire x1="63.3856125" y1="16.193953125" x2="52.95391875" y2="29.24913125" width="0" layer="19" extent="1-1"/>
+<wire x1="63.450190625" y1="4.9963" x2="63.3856125" y2="16.193953125" width="0" layer="19" extent="1-1"/>
+<wire x1="34.350828125" y1="21.4758375" x2="52.95391875" y2="29.24913125" width="0" layer="19" extent="1-1"/>
+<wire x1="29.270828125" y1="21.4758375" x2="34.350828125" y2="21.4758375" width="0" layer="19" extent="1-1"/>
+<wire x1="34.02108125" y1="15.540671875" x2="34.350828125" y2="21.4758375" width="0" layer="19" extent="1-1"/>
+<wire x1="30.063690625" y1="11.739871875" x2="34.02108125" y2="15.540671875" width="0" layer="19" extent="1-1"/>
+<wire x1="23.68546875" y1="18.478121875" x2="29.270828125" y2="21.4758375" width="0" layer="19" extent="1-1"/>
+<wire x1="22.439671875" y1="24.05176875" x2="23.68546875" y2="18.478121875" width="0" layer="19" extent="1-1"/>
+<wire x1="26.5" y1="5.814778125" x2="30.063690625" y2="11.739871875" width="0" layer="19" extent="1-1"/>
+<wire x1="21.5" y1="5.814778125" x2="26.5" y2="5.814778125" width="0" layer="19" extent="1-1"/>
+<wire x1="14.49273125" y1="4.45873125" x2="21.5" y2="5.814778125" width="0" layer="19" extent="1-1"/>
+<wire x1="14.37493125" y1="11.678203125" x2="14.49273125" y2="4.45873125" width="0" layer="19" extent="1-1"/>
+<wire x1="3.5" y1="8.7" x2="14.37493125" y2="11.678203125" width="0" layer="19" extent="1-1"/>
+<wire x1="8.158959375" y1="28.272571875" x2="22.439671875" y2="24.05176875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+9V">
 <contactref element="IC2" pad="1"/>
@@ -1071,6 +1083,11 @@ design rules under a new name.</description>
 <wire x1="48.7980375" y1="12.39" x2="45.27286875" y2="15.91516875" width="0.4064" layer="16"/>
 <wire x1="45.27286875" y1="15.91516875" x2="45.27286875" y2="19.99713125" width="0.4064" layer="16"/>
 <wire x1="45.27286875" y1="19.99713125" x2="45.27" y2="20" width="0.4064" layer="16"/>
+</signal>
+<signal name="AUDIOGND">
+<contactref element="AUDIO" pad="2"/>
+<contactref element="U$2" pad="P$3"/>
+<wire x1="48.83" y1="15.39" x2="52.8200375" y2="24.307759375" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
